@@ -1,6 +1,9 @@
 # General
 *.pdf
 *.docx
+*.csv
+
+.vscode/
 
 #######
 # .py #
