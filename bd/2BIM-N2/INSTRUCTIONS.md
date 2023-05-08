@@ -22,6 +22,6 @@
 * Exibir o vídeo de importação
 * Dashboard no PowerBI (versão web)
 * Depoimento contendo:
-  - Dificuldades encontradas,
-  - Como foram solucionadas,
-  - Quais conhecimentos adicionais foram necessários adquirir fora de classe para realizar o trabalho
+  * Dificuldades encontradas,
+  * Como foram solucionadas,
+  * Quais conhecimentos adicionais foram necessários adquirir fora de classe para realizar o trabalho
