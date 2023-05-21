@@ -3,6 +3,7 @@
 *.docx
 *.csv
 *.zip
+*.pbix
 
 .vscode/
 
