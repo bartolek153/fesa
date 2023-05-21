@@ -2,6 +2,7 @@
 *.pdf
 *.docx
 *.csv
+*.zip
 
 .vscode/
 
