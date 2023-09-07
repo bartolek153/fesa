@@ -1,0 +1,62 @@
+
+body { 
+    width: 900px; 
+    margin: 90px auto; 
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    padding: 1cm;
+    color:black;
+    background-color: white;
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 50px black;
+}
+
+html { 
+    background: url(a.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bordershadow {
+    width: fit-content;
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ffff;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+    transition: all 200ms ease-out;
+    background-color: #c5eeff;
+    margin-left: auto; margin-right: auto;
+}
+
+.primary-btn {
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.bordershadow:hover {
+    box-shadow: 0 0 10px rgba(35, 173, 278, 1);
+}
+
+.first-letter-trial::first-letter {
+        font-size: 40px;
+        font-weight: bold;
+        color: blue;
+}
+
+.one {
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+li.one::marker {
+    color: orange;
+    font-size: 200%;
+}

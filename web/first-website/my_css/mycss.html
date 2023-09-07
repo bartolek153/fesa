@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Basic_CSS</title>
+        <link rel="stylesheet" type="text/css" href="folder-css/myy.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section>
+        <h1>Definition</h1>
+            <li>Cascading (lecture reading occurs from top to bottom) Style Sheet (place with style informations): language that describes how HTML elements are to be displayed on browser/screen, paper, or in other media (its style)</li>
+            <li>Site customization, basically.</li>
+            <img width="20%" src="https://logodownload.org/wp-content/uploads/2017/04/css-3-logo-1.png" style="float: right;"> 
+
+        <h1>Concepts</h1>
+            <li class="first-letter-trial">Selectors: patterns used to select the element(s) you want to style</li>
+            <li class="first-letter-trial">External Style: the style is written inside an external file</li>
+            <li class="first-letter-trial">Internal Style: the style is written under the style tag (head)</li>
+            <li class="first-letter-trial">Inline Style: the style is written with attributes, on the html tags</li>
+            <li class="first-letter-trial">Pseudo-element: used to style specified parts of an element</li>
+            <li class="first-letter-trial">Pseudo-class: used to define a special state of an element</li>
+
+        <h1>Basic CSS structure summary</h1>
+            <img width="350px" src="css-quickresume.png">
+
+        <h1>Rule</h1>
+            <p>A CSS structure consists of a selector and a declaration block. The selector points to the HTML element that will receive style and the declaration block contains one or more declarations separated by semicolons</p>
+            <p>A declaration block  includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces</p>
+            <p>class and id rule: attributes that helps us, in case we want to apply a style to a unique tag or more than one</p>
+            <li>id="name": only one tag can have this id, and to apply css, the style tag must contain the hash (#) before the selector</li>
+            <li>class="name": apply the same style to multiple elements, and to apply the css, the style tag must contain a dot (.) before the selector</li>
+            <p class="bordershadow">[selector/element target] + [with or without .class/#id] + { property: property value; ... }</p>
+        
+        <h1>Applications and some rules</h1>
+            <ul>
+                <div style="background-color: #c5eeff; float: right;">
+                    Hex: <span style="background-color:#2a9df4">#2a9df4</span>
+                </br>
+                    RGB: <span style="background-color: rgb(253, 180, 115);">rgb(253, 180, 115)</span>
+                </br>
+                    pre-defined: <span style="background-color: aqua;">aqua</span>
+                </div>
+                <li>color: [a color] (<a href="https://www.color-hex.com/">Hex</a>, RGB, pre-defined colors...)</li>
+                <li>background-color: [a color]</li>
+                <li>background-image: [url("imagehere.type of file")]</li>
+                <li>width: [measure] (cm,px,%,etc.); height: a measure</li>
+                <li>font-size: [measure]</li>
+        
+        <img width="40%" src="css-mbp.png" style="float:right; clear: right;">
+        
+                <li>font-weight: [bold | light | ...] </li>
+                <li>font-family: [a kind of font] (Arial, Helvetiva, etc.)</li>
+                <li>border: [width] [type of border] [color]</li>
+                <li>border-raidus: [one, two three or four measures]</li>
+                <li>margin: [top measure] [right measure] [bottom measure] [left measure]</li>
+                <li>margin-top | margin-right | margin-bottom | margin-left: [measure]</li>
+                <li>padding: [top measure] [right measure] [bottom measure] [left measure]</li>
+                <li>padding-top | padding-right | padding-bottom | padding-left: [measure]</li>
+                <li>text-align: [center | right | left]</li>
+                <li>text-decoration: [none | a color]</li>
+                <li>float: </li>
+                <li>clear: </li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        <h1>External file</h1>
+            <ol>
+                <li class="one"></br>Create css file and name it</li>
+                <li class="one"></br>Inside the html file, put under the head tag a link tag, with rel, type and href attributes</li>
+                <li class="one"></br>Fill the rel attribute with rel="stylesheet"</li>
+                <li class="one"></br>Fill the type attribute with type="text/css"</li>
+                <li class="one"></br>Fill the href attribute with href="css_file_name.css"</li>
+            </ol>
+    </section>
+
+        <h1>More</h1>
+    <footer>
+        <nav>
+            <a class="primary-btn" href="mycss.html" style="background-color: rgb(64, 64, 247);">About CSS</a>
+            <a class="primary-btn" href="" style="background-color: rgb(250, 212, 0);">About JavaScript</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

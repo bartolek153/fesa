@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Basics_HTML </title>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <style> 
+    html {
+        scroll-behavior: smooth;
+    }
+    body { 
+        background-image: url("old-paper.jpg"); background-size: 1520px 4740px; background-position: contain;
+        background-color: antiquewhite; 
+        font-size: 18px;
+        font-family: cursive;
+        text-align: justify;
+        color: black;
+        margin: 4cm 4cm 2cm 4cm;
+        border: 2px solid black; border-radius: 15px 50px;
+        border-width:7px;  
+        border-style:double;
+        padding: 1cm;
+        ;
+    }
+    img {
+        margin-left: auto; margin-right: auto; 
+        padding: 10px;
+        width:fit-content; 
+        display: block;
+        border: 2px dotted black; border-radius:10px; 
+        background-color: none;
+    }
+
+
+
+    .structure {
+        border: 2px dashed black; border-radius:10px; 
+        text-align: center;
+        margin-left: auto; margin-right: auto;
+        background-color: lemonchiffon;
+        padding: 20px;
+        width: fit-content; 
+        float: right;
+    }
+
+    #anchor-short {
+        text-decoration: none; color: black;
+    }
+
+
+
+        table.t1 {
+        width: 60%;
+        border-collapse: collapse;
+        background-color: rgb(247, 243, 217);
+    }   
+        tr.rules:nth-child(even) {
+        background-color: rgb(255, 253, 239);
+    } 
+        .t1 td, .t1 th {
+            padding: 5px;
+            border: 2px solid black;
+    }
+        table#example-tab {
+        float: right;
+    }
+        .th_td {
+        font-size: 12px;
+        border: 1px solid black!important;
+        color: black;
+        }
+
+
+
+    .primary-btn {
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="mycss.html">a</a>
+        </nav>
+<!--conceitos-->
+        <section>
+        <img src="html-modfont.png" align=center>
+    
+        <h1>Definition</h1>
+            <div>
+                <ul>
+            <li>HyperText (text conected to others) Markup (special elements to create these hypertexts + structure of the website) 
+                Language, is the standard markup language for Web pages. Internet ONLY undestand HTML.</li>
+            <li>Internet uses HTML language to display the informations contained in a website for the user, 
+                through a browser or client</li>
+            <li>Webpages files are saved as .html files.</li>
+            <li>First of all, it's necessary to undestand it's concepts</li>
+                </ul>
+    
+                <img src="https://codigosimples.net/wp-content/uploads/2014/01/200px-HTML5_logo_and_wordmark.svg_.png" alt="HTML version 5">
+        <h1 id=anchor1>Concepts</h1>
+                <ol>
+            <li><strong>Tag markup:</strong> markup which function is, basically, to create elements and orders to organize, identify and limit content in a website. 
+            Then, the browser comes, and automatically, recognizes and renders the .html file, so that the user can read the info displayed;</li>
+            <li><strong>Element:</strong> 
+            everything from the start tag to the end tag;</li>
+            <li><strong>Attribute tag:</strong>
+            informations that provide additional or special characteristics/attributes about elements. Can also act as a kind of shortcut to modify an element, without having to do a lot of work.;</li>
+            <li><strong>Anchor tag:</strong>
+            tag used only to link different webpages, attach documents or even create shortcuts in the current webpage;</li>
+            <li><strong>URL:</strong>
+            Uniform Resource Locator (or just URL) is the adress to get to an webpage. All websites and webpages have an unique name or link ("google" or "www.google.com", for example);</li>
+            <li><strong>SEO:</strong>
+            <li><strong>Syntax:</strong>
+            is
+                </ol> 
+        </section>
+
+<!--resumo-->
+    </br>
+        <section>
+            <h2>Basic HTML file structure summary</h2>
+                <figure align="center">    
+            <img alt="quick resume" title="check next topic" src="resume-html.png">
+            <figcaption>*P.S.: come back here after reading Tag section</figcaption>
+                </figure>
+        </section>
+
+<!--tags-->
+        <section> 
+        <h1>Tags</h1>
+            <div> 
+            Tag structure: tagname between angle brackets, in the start and in the end (hamburger):
+            <br/>
+            <p class="structure">  <b> [&lttagname&gt] + [content here...] + [&lt/tagname&gt]  </b> </p>
+        </br> <i>*NOTE: Forward slash "/" denotes that the tag is closing</i> 
+            </div>
+                <ul>
+            <h3>Primary structural tags</h3>
+                <li>!DOCTYPE html: first most essencial tag (necessary so that the browser can read the code)</li>
+                <li>html: second most essencial tag and everything goes inside here</li>
+                <li>head: delimits the document header and contains infos that aren't visible in the webpage</li>
+                <li>title: title of the webpage (appears in the tab, window, etc.)</li>
+                <li>meta: </li>
+                <li>body: all visible content must be put inside here</li>
+    
+            <h3>Secondary structural tags (containers)</h3>
+                <li>header:</li>
+                <li>main:</li>
+                <li>footer: defines a footer for a document or section</li>
+                <li>section: divide the code in sections (not visible) </li>
+                <li>article:</li>
+                <li>aside:</li>
+                <li>nav: defines a set of navigation links</li>
+                <li>figure: mark up a photo in a document</li>
+                <li>div: create a "small" section or part of the code [document divisions]</li>
+    
+            <h3>Content tags</h3>
+            <ul><li>Insert Title and subtitles</li></ul>        
+                <li>h1 to h6: create titles and subtitles [heading] </li>
+                <br/>
+            <ul><li>Insert text</li></ul>  
+                <li>i|em: italic/emphasize text [emphasize]</li>
+                <li>br/: break line, no need to close [break]</li>
+                <li>hr/: text will run across the page, no matter how large the user makes their screen, no need to close [horizontal] </li>
+                <br/>
+            <ul><li>Insert lists</li></ul>
+                <li>ol: ordered list</li>
+                <li>ul: unordered list</li>
+                <li>li: insert list items (whatever it's a ol or ul)</li>
+                <br/>
+            <ul><li>Insert multimedias</li></ul>
+                <li>img: insert image</li>
+                <li>video: insert video</li>
+                <li>audio: insert audio</li>
+                <li>iframe:</li>
+                <br/>
+            <ul><li>Insert link</li></ul> 
+                <li> a: <a id="anchor-short" href="#anchor1">click here</a> + must have an href attribute in the opening [anchor]</li>
+                <li>link: defines the relationship between the current document and an external resource, mostly used for external css with rel attribute</li>
+                <br/>
+            <ul><li>Insert form</li></ul>
+                <li>input: https://www.w3schools.com/tags/tag_input.asp specifies an input field where the user can enter data, must contain type attribute</li>
+                <li>textarea:</li>
+                <br/>
+            <ul><li>Insert table</li></ul>
+
+
+
+            <table id="example-tab" cellpadding=5 cellspacing=0>
+                <colgroup>
+                    <span hidden>If this this tag dissapear, the table will broke</span>
+                    <col span="1" style="background-color: #ffbf45"> 
+                    <col span="3" style="font-size: 10px; background-color: #ffea61"> 
+                    <col span="1" style="background-color: #ffbf45"> 
+                    <col span="1" style="background-color: #ffcd6f">
+                </colgroup>
+                <caption>Summary</caption>
+                <thead>
+                    <tr>
+                        <th colspan="7" align="center" style="background-color: #ffeecc">&lttable&gt</th>
+                    </tr>
+                    <tr>
+                        <th colspan="7" align="center" style="background-color: #ffdd9e">&ltcaption&gt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: #ffcd6f">&ltthead&gt</td>
+                        <td> &lttr&gt</td>
+                        <td class="th_td" style="background-color: #ffffb7">&ltth&gt</br>&lt/th&gt</td>
+                        <td class="th_td" style="background-color: #ffffb7">&ltth&gt</br>&lt/th&gt</td>
+                        <td class="th_td" style="background-color: #ffffb7">&ltth&gt</br>&lt/th&gt</td>
+                        <td>&lt/tr&gt</td>
+                        <td>&lt/thead&gt</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #ffcd6f">&lttbody&gt</td> 
+                        <td>&lttr&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td>&lt/tr&gt</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #ffcd6f"></td>
+                        <td>&lttr&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td">&lttd&gt</br>&lt/td&gt</td>
+                        <td>&lt/tr&gt</td>
+                        <td>&lt/tbody&gt</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #ffcd6f">&lttfoot&gt</td>
+                        <td>&lttr&gt</td>
+                        <td class="th_td" style="background-color: #ffd400">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td" style="background-color: #ffd400">&lttd&gt</br>&lt/td&gt</td>
+                        <td class="th_td" style="background-color: #ffd400">&lttd&gt</br>&lt/td&gt</td>
+                        <td>&lt/tr&gt</td>
+                        <td>&lt/tfoot&gt</td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7" style="background-color: #ffeecc; text-align: center;"><b>&lt/table&gt</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                        </br>
+                            <span style="background: #ffffb7;">header content</span>
+                        </br>
+                            <span style="background: #ffea61;">body content</span>
+                        </br>
+                            <span style="background: #ffd400">footer content</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+
+
+
+                <table class="t1">
+                    <caption>Rules</caption>
+                    <thead class="t1" style="background: lemonchiffon">
+                        <tr class="rules">
+                            <th>Tag</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rules"> 
+                            <td>table</td>
+                            <td>defines a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>th</td>
+                            <td>defines a header cell in a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>tr</td>
+                            <td>defines a row in a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>td</td>
+                            <td>defines a cell in a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>caption</td>
+                            <td>defines a table caption </td>
+                        </tr>
+                        <tr class="rules">
+                            <td>colgroup</td>
+                            <td>specifies a group of one or more colums in a table for formatting</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>col</td>
+                            <td>specifies column properties for each column within a colgroup element</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>colspan</td>
+                            <td>attribute that defines the number of columns a cell should span</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>cellpadding</td>
+                            <td>attribute that </td>
+                        </tr>
+                        <tr class="rules">
+                            <td>cellspacing</td>
+                            <td>attribute that </td>
+                        </tr>
+                        <tr class="rules">
+                            <td>thead</td>
+                            <td>groups the header content in a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>tbody</td>
+                            <td>groups the body content in a table</td>
+                        </tr>
+                        <tr class="rules">
+                            <td>tfoot</td>
+                            <td>groups the footer content in a table</td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+
+
+            <h3>Commentary tag</h3>
+                <li>!-- ... -- : let commentaries inside the code, invisible on the browser</li>
+                </ul>
+        </section>
+    
+<!--atributos-->
+        <section>
+        <h1 href="https://www.w3schools.com/tags/ref_attributes.asp">Attribute Tags</h1>
+            <div>
+            Attribute structure: name of the attribute = its value, that can be a word or number, genereally inside quotes. Have to be only in the oppening tag.
+            <br/> 
+            <p class="structure">  <b> &lt [openning tag] + [name="value"] &gt  </b> </p>
+            </div>
+                <ul>
+            <h3>Common Global Attributes (can be used with all HTML elements)</h3>
+                <li>id="any name, no space, no special characters": give identity only for a  <br/> single tag, then it can be modified by css </li> 
+                    </br>
+                <li>class="any name, same rules as id": give identity for tags, a unique css can be applied for many tags</li>
+                <li>style=<span style="color: purple;">"a css rule"</span>: style shortcuts, instead of oppening css selectors</li>
+                    </br>
+                <li>lang="abbreviation of the idiom used-abbreviation of country": not necessary but helps in search, goes inside html tag, have to specify,
+                    </br>1. language - e.g.: en | pt | es
+                    </br>1.1 country (otional)- e.g.: US | BR | CA
+                    </br></br></li> 
+                <li>title="extra information":  displayed as a tooltip, when the user mouse over the element</li>
+                    </br>
+                <li>align="position": text alignment, alternative for css</li>
+                    </br>
+                <li>hidden: specifies that an element is not yet, or is no longer, relevant</li>
+                    </br>
+    
+            <h3>Common Specific Attributes</h3>
+                <li>href="URL destination": with anchor tag and others, must specify,
+                    </br>1. URL of the page the link goes (absolute URL) - e.g.: href="https://google.com"
+                    </br>2. or path of the other local .html file (relative URL) - e.g.: href="user/downloads/images/image1.html"
+                    </br>3. or specific section of the current webpage (the id attribute) - e.g.: href="(id destination)"
+                    </br></br></li>
+                <li>src="any kind of media": have to specify,
+                    </br>1. relative URL - e.g.: src="user/downloads/images/image1.jpg"
+                    </br>2. or absolute URL - e.g.: src="https://iamge1.png" 
+                    </br>3. or only the file name (if the document and media are in the same folder) - src="image1.jpg"
+                    </br></br></li>
+                <li>width="measure" + height="measure": usually comes with src, plus have to specify
+                    </br>1. measures with units
+                    </br></br></li>
+                <li>alt="alternative text": in case the image does't loads and other specific things, there will be an text</li>
+                    </br>
+                </ul>    
+        </section>
+
+<!--About-->
+    <footer>
+        <nav>
+            <a class="primary-btn" href="mycss.html" style="background-color: rgb(64, 64, 247);">About CSS</a>
+            <a class="primary-btn" href="" style="background-color: rgb(250, 212, 0);">About JavaScript</a>
+        </nav>
+    </footer>
+    </body>
+</html>
